@@ -1,4 +1,4 @@
-import { View, Text, Image, Dimensions, TouchableOpacity } from 'react-native'
+import { View, Text, Image, Dimensions, TouchableOpacity, ScrollView } from 'react-native'
 import React from 'react'
 import { Link, router, Stack, useLocalSearchParams } from 'expo-router'
 import ListData from '../Data/ListData.js';
@@ -37,6 +37,8 @@ const ListingDetails = () => {
 {/* //content */}
 
     <View className=''>
+      <ScrollView contentContainerStyle={{paddingBottom:150}}>
+
       <Image source={{uri:listing.image}} width={width} height={300} />
       <View className='py-5 px-3' >
         <Text className='font-bold text-2xl ' >{listing.name}</Text>
@@ -80,6 +82,22 @@ const ListingDetails = () => {
 <View className='px-4 py-2 w-80'>
   <Text className='font-semibold' >{listing.description}</Text>
 </View>
+
+</ScrollView>
+
+
+{/* buttons */}
+
+    <View className='flex-row gap-5 justify-evenly' >
+      <TouchableOpacity onPress={()=>{}} className='bg-orange-500 border-orange-500 rounded-lg px-8 py-4  text-white hover:bg-white hover:text-orange-400 '  >
+        <Text>Book Now</Text>
+      </TouchableOpacity>
+
+      <TouchableOpacity onPress={()=>{}} className='bg-black border-black rounded-lg px-8 py-4  text-white hover:bg-white hover:text-black '  >
+        <Text className='text-white hover:text-black' >${listing.price}</Text>
+      </TouchableOpacity>
+
+    </View>
 
     </View>
 
