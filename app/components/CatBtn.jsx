@@ -16,7 +16,7 @@ const CatBtn = ({handleCatChange}) => {
 
   return (
     <View>
-      <Text className="text-xl font-bold py-4">Categories</Text>
+      <Text className="text-xl font-bold  py-4">Categories</Text>
       <ScrollView horizontal showsHorizontalScrollIndicator={false}>
         {CatData.map((item, id) => (
           <View key={id} className="px-4 py-2">

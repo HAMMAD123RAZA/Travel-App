@@ -96,7 +96,7 @@ const ListingDetails = () => {
       <TouchableOpacity onPress={()=>{}} className='bg-black border-black rounded-lg px-8 py-4  text-white hover:bg-white hover:text-black '  >
         <Text className='text-white hover:text-black' >${listing.price}</Text>
       </TouchableOpacity>
-
+      
     </View>
 
     </View>

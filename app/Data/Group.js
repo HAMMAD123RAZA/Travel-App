@@ -9,14 +9,14 @@ const GroupData = [
   {
     "id": "2",
     "name": "Happy Tour Planners",
-    "image": "https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0",
+    "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e",
     "rating": 4.8,
     "reviews": 650
   },
   {
     "id": "3",
     "name": "Royal Tour & Travels",
-    "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e",
+    "image": "https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0",
     "rating": 4.9,
     "reviews": 550
   },
